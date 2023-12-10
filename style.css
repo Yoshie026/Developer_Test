@@ -12,6 +12,64 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.header{
+  color: #000000;
+background-color: #FFFEFE;
+}
+
+
+.menuBtn{
+  display:flex;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20em;
+  width: 200px;
+  height: 40px;
+}
+
+
+.blk{
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.wht{
+  color: #000000;
+  background-color: #ffffff;
+}
+
+
+.text {
+  max-width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px 30px;
+}
+
+.left p{
+  display: inline-block;
+  text-align: left;
+}
+
+.center p{
+  display: inline-block;
+  text-align: center;
+  width: 30%;
+}
+
+
+.right p{
+  display: inline-block;
+  text-align: right;
+}
+
+.big{
+  font-size:larger;
+}
+
+.small{
+  font-size:smaller;
+}
 
 a {
   font-weight: 500;
@@ -36,51 +94,13 @@ h1 {
 }
 
 #app {
-  max-width: 1280px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #f7df1eaa);
-}
 
-.card {
-  padding: 2em;
-}
 
-.read-the-docs {
-  color: #888;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
 
 @media (prefers-color-scheme: light) {
   :root {

@@ -14,12 +14,10 @@
 }
 
 
-.header span svg{
-  left:0;
-  top:0;
-  position: absolute;
+.logo{
+    width: 5%;
+    display: block;
 }
-
 
 
 :root {
@@ -40,25 +38,60 @@
 .header{
   color: #000000;
 background-color: #FFFEFE;
+display: flex;
 }
 
-
 .menuBtn{
-  display:flex;
   position: -webkit-sticky;
   position: sticky;
-  top: 20em;
+  display:block;
+  top: 15em;
   left:6em;
+  text-align: left;
+  padding: 8px;
   width: 200px;
-  height: 50px;
   z-index: 1;
+  cursor: pointer;
+  background-color: #252525;
+  border-radius: 7px;
 }
 
 .menuBtn:hover{
-  color: #000000;
   background-color: #FFFEFE;
+  color: #252525;
 }
 
+.menu
+{
+  border-radius: 7px;
+  text-transform: uppercase;
+  max-height: 0;
+  position:absolute;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: white;
+  font-family: bold;
+  z-index: 1;
+  text-align: left;
+  /* border: 1px solid #252525; */
+  font-weight: 500;
+  text-decoration:none;
+
+}
+
+.menu li
+{
+  padding:8px;
+  color: black;
+  list-style-type: none;
+  text-decoration:none;
+  margin:auto 0;
+  font-size: medium;
+}
+
+.menu li:hover, .menu li:active{
+  color: #808080;
+}
 
 section{
   width: 100%;
@@ -85,7 +118,7 @@ section{
 
 .bold{
   font-family:bold;
-font-size: 30px;
+font-size: 35px;
 font-weight: 700;
 line-height: 43px;
 }
@@ -117,11 +150,6 @@ line-height: 43px;
   font-size:smaller;
 }
 
-a {
-  font-weight: 500;
-  color: black;
-  text-decoration: underline;
-}
 
 
 body {
@@ -140,17 +168,14 @@ body {
 }
 
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-}
 
+@media (min-width: 768px) and (max-width: 979px) {
+  .text {
+    max-width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    letter-spacing: 0px;
+  }
+ }
 
+ 

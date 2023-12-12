@@ -1,5 +1,29 @@
+@font-face {
+  font-family: light;
+  src: url(./src/font/Poppins-Light.ttf);
+}
+
+@font-face {
+  font-family: medium;
+  src: url(./src/font/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: bold;
+  src: url(./src/font/Poppins-bold.ttf);
+}
+
+
+.header span svg{
+  left:0;
+  top:0;
+  position: absolute;
+}
+
+
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: light;
   line-height: 1.5;
   font-weight: 400;
 
@@ -12,6 +36,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 .header{
   color: #000000;
 background-color: #FFFEFE;
@@ -23,10 +48,22 @@ background-color: #FFFEFE;
   position: -webkit-sticky;
   position: sticky;
   top: 20em;
+  left:6em;
   width: 200px;
-  height: 40px;
+  height: 50px;
+  z-index: 1;
 }
 
+.menuBtn:hover{
+  color: #000000;
+  background-color: #FFFEFE;
+}
+
+
+section{
+  width: 100%;
+  height:100%;
+}
 
 .blk{
   color: #ffffff;
@@ -42,8 +79,15 @@ background-color: #FFFEFE;
 .text {
   max-width: 80%;
   text-align: center;
-  margin: 0 auto;
-  padding: 10px 30px;
+    margin: 0 auto;
+  letter-spacing: 0px;
+}
+
+.bold{
+  font-family:bold;
+font-size: 30px;
+font-weight: 700;
+line-height: 43px;
 }
 
 .left p{
@@ -53,7 +97,8 @@ background-color: #FFFEFE;
 
 .center p{
   display: inline-block;
-  text-align: center;
+  text-align: justify;
+
   width: 30%;
 }
 
@@ -64,7 +109,8 @@ background-color: #FFFEFE;
 }
 
 .big{
-  font-size:larger;
+  font-size:x-large;
+  
 }
 
 .small{
@@ -73,12 +119,10 @@ background-color: #FFFEFE;
 
 a {
   font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+  color: black;
+  text-decoration: underline;
 }
-a:hover {
-  color: #535bf2;
-}
+
 
 body {
   margin: 0;
@@ -88,18 +132,12 @@ body {
   min-height: 100vh;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
 
 #app {
   max-width: 100%;
   margin: 0 auto;
   text-align: center;
 }
-
-
 
 
 @media (prefers-color-scheme: light) {
@@ -114,3 +152,5 @@ h1 {
     background-color: #f9f9f9;
   }
 }
+
+

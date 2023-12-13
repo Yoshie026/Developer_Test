@@ -15,21 +15,19 @@
 
 
 .logo{
-    width: 5%;
-    display: block;
+    width: 7%;
+    display: inline-block;
+    position:relative;
 }
 
 
 :root {
-  font-family: light;
-  line-height: 1.5;
+
+  /* line-height: 1.5; */
   font-weight: 400;
-
-  color-scheme: light dark;
+  font-family: light;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
-  font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -39,6 +37,14 @@
   color: #000000;
 background-color: #FFFEFE;
 display: flex;
+justify-content: center;
+}
+
+.header span{
+padding-left:10%;
+align-content: left;
+display: flex;
+justify-content: center;
 }
 
 .menuBtn{
@@ -46,7 +52,7 @@ display: flex;
   position: sticky;
   display:block;
   top: 15em;
-  left:6em;
+  left:3em;
   text-align: left;
   padding: 8px;
   width: 200px;
@@ -54,6 +60,8 @@ display: flex;
   cursor: pointer;
   background-color: #252525;
   border-radius: 7px;
+  font-family: medium;
+
 }
 
 .menuBtn:hover{
@@ -150,7 +158,9 @@ line-height: 43px;
   font-size:smaller;
 }
 
-
+.contatainer{
+  display: flex;
+}
 
 body {
   margin: 0;
@@ -162,20 +172,80 @@ body {
 
 
 #app {
-  max-width: 100%;
   margin: 0 auto;
   text-align: center;
 }
 
 
+.initial{
+  font-size: 50px;
+          font-family: medium;
+          font-weight: 600;
+          line-height: 75px;
+          letter-spacing: 0px;
+          text-align: left;
+}
+.ssss{
+  color: transparent;
+          -webkit-text-stroke-width: 1px;
+          font-family: medium;
+          -webkit-text-stroke-color: white;
+          margin:0 0 0 -35px;
+          padding:0;
+          letter-spacing: 0px;
+          font-weight:400;
+          line-height:400px;
+      font-size: 500px;
+}
 
-@media (min-width: 768px) and (max-width: 979px) {
-  .text {
-    max-width: 80%;
-    text-align: center;
-    margin: 0 auto;
-    letter-spacing: 0px;
+
+@media screen and (max-width: 767px){
+  
+ .root{
+  font-family: medium;
+ }
+
+
+
+  .header{
+    width:90%;
+    display:flex;
+    margin-bottom:-8%;
   }
+
+.menuBtn{
+  top:10%;
+  left:30%;
+  padding:40px;
+  width:400px;
+  text-align: center;
+}
+.menu{
+  width:350px;
+  
+}
+
+  .initial{
+    text-align: center;
+  }
+  .ssss{
+    letter-spacing: -60px;
+    width:90%;
+    -webkit-text-stroke-width: 2px;
+  }
+
+
+  .logo{
+    width: 15%;
+    display: inline-block;
+    position:relative;
+  }
+  section svg{
+    width:50%;
+    height:50%;
+  }
+
+
  }
 
  
